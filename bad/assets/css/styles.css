@@ -956,7 +956,7 @@ ul.socials li {
     }
 }
 
-@media all and (min-width: 1441px) {
+@media all and (min-width: 1680px) {
     .header {
         height: 15vh;
         max-height: 175px;
