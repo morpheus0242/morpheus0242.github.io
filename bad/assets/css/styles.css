@@ -956,7 +956,7 @@ ul.socials li {
     }
 }
 
-@media all and (min-width: 1680px) {
+@media all and (min-width: 1880px) {
     .header {
         height: 15vh;
         max-height: 175px;
@@ -976,15 +976,15 @@ ul.socials li {
     }
 
     nav.menu>ul>li {
-        font-size: x-large;
+        /* font-size: x-large; */
     }
 
     .contact-us {
-        font-size: x-large;
+        /* font-size: x-large; */
     }
 
     .search-zone form.search-form .search-bar input, .search-zone form.search-form .search-bar input::placeholder {
-        font-size: x-large;
+        /* font-size: x-large; */
     }
 
     .search-zone form.search-form button.search-btn {
