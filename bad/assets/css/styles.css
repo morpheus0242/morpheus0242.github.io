@@ -36,6 +36,15 @@ a.btn.btn-action {
     -moz-border-radius: var(--pm-border-radius-inner);
     -ms-border-radius: var(--pm-border-radius-inner);
     -o-border-radius: var(--pm-border-radius-inner);
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+}
+
+a.btn.btn-action:hover {
+    background: #dfedfad5;
 }
 
 .main {
@@ -629,10 +638,10 @@ li.donnee-item {
     flex-wrap: nowrap;
     justify-content: space-between;
     transition: all .6s ease-in-out ;
-    -webkit-transition: all .6s ease-in-out ;
-    -moz-transition: all .6s ease-in-out ;
-    -ms-transition: all .6s ease-in-out ;
-    -o-transition: all .6s ease-in-out ;
+    -webkit-transition: all .6s ease-in-out !important;
+    -moz-transition: all .6s ease-in-out !important;
+    -ms-transition: all .6s ease-in-out !important;
+    -o-transition: all .6s ease-in-out !important;
     -webkit-border-radius: var(--pm-border-radius-inner);
     -moz-border-radius: var(--pm-border-radius-inner);
     -ms-border-radius: var(--pm-border-radius-inner);
@@ -941,8 +950,210 @@ ul.socials li {
 
 @media all and (max-width: 1158px){
     .main {
-        padding: 0;
+        padding: 0 15px;
         margin: 0 auto;
         width: 98%;
+    }
+}
+
+@media all and (max-width: 430px){
+
+    .main {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .slider-bg img {
+        object-fit: contain;
+        object-position: bottom;
+    }
+
+    .headers {
+        min-height: unset;
+        height: unset;
+        aspect-ratio: 1.5 / 1;
+        background: var(--pm-color-primary);
+    }
+
+    .header {
+        margin: 8px auto;
+    }
+    .call-to-action.btn {
+        position: absolute;
+        left: 3%;
+        width: 60%;
+        bottom: 10%;
+    }
+
+    .main-block {
+        width: 80%;
+        margin: auto;
+    }
+
+    .block-min-logo {
+        width: 35%;
+    }
+
+    .block-header h3.block-title {
+        font-size: 2rem;
+    }
+
+    .presentation-content {
+        display: flex
+    ;
+        flex-direction: column;
+        align-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .presentation-content .first {
+        width: 100%;
+        text-align: unset;
+    }
+
+    .presentation-content .second {
+        width: 100%;
+    }
+
+    .reasons-list>li {
+        max-width: 98%;
+        min-height: unset;
+    }
+
+    ol.reasons-list .reason-header {
+        padding: 35px 15px;
+    }
+
+    footer {
+        padding: 35px 2rem;
+        text-align: center;
+    }
+
+    .footer-menu li {
+        width: 100%;
+    }
+
+    ul.socials {
+        align-items: center;
+    }
+
+    h2.footer-title {
+        font-size: 2rem;
+    }
+
+    h5.header-subtitle {
+        font-size: 2rem;
+        margin-top: -5px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 50px;
+        align-content: center;
+    }
+
+    .footer-menu {
+        width: 100%;
+        display: flex
+    ;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: center;
+    }
+
+    .footer-content .footer-medias {
+        width: 100%;
+    }
+
+    .footer-logo img {
+        height: 80px;
+    }
+
+    .footer-menu ul {
+        width: 100%;
+    }
+
+    .footer-menu ul *, [data-aos]  {
+        opacity: 1 !important;
+    }
+
+    html:not(.no-js) [data-aos=fade-up] {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    li.donnee-item, ul.donnees-list:not(:has(.donnee-item.active)) .donnee-item:last-child{
+        width: 80%;
+        height: unset;
+        padding: 35px 15px;
+        max-height: 250px;
+    }
+
+    li.donnee-item.active ~ li.donnee-item {
+        width: 80%;
+    }
+
+    li.donnee-item.active .donnee-content {
+        max-height: 1000px;
+        line-height: 1.6;
+    }
+
+    li.donnee-item.active .donnee-title h4 {
+        margin-bottom: unset;
+    }
+
+    ul.donnees-list {
+        list-style: none;
+        display: flex
+    ;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-top: 50px;
+        position: relative;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    ul.donnees-list:before {
+        height: 90%;
+    }
+
+    li.donnee-item.active {
+        width: 80%;
+        padding: 35px 15px;
+        max-height: 1000px;
+    }
+
+    .main-message {
+        margin: 25px 0;
+        display: flex
+    ;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+
+    .message-content {
+        width: 80%;
+    }
+
+    .message-header {
+        border-left: unset;
+        padding-left: unset;
+        width: 80%;
+        border-top: .5px solid;
+    }
+
+    .footer-logo {
+        justify-content: center;
     }
 }
