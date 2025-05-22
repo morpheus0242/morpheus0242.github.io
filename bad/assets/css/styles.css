@@ -956,6 +956,50 @@ ul.socials li {
     }
 }
 
+@media all and (min-width: 1441px) {
+    .header {
+        height: 15vh;
+        max-height: 175px;
+        margin: 35px auto;
+    }
+
+    /* .main {
+        max-width: 2200px;
+    } */
+
+    h2.footer-title {
+        font-size: 8rem;
+    }
+
+    h5.header-subtitle {
+        font-size: 7rem;
+    }
+
+    nav.menu>ul>li {
+        font-size: x-large;
+    }
+
+    .contact-us {
+        font-size: x-large;
+    }
+
+    .search-zone form.search-form .search-bar input, .search-zone form.search-form .search-bar input::placeholder {
+        font-size: x-large;
+    }
+
+    .search-zone form.search-form button.search-btn {
+        height: 40px;
+    }
+
+    footer *{
+        opacity: 1;
+        transform: translate3d(0, 0, 0) !important;
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        -moz-transform: translate3d(0, 0, 0) !important;
+        -ms-transform: translate3d(0, 0, 0) !important;
+        -o-transform: translate3d(0, 0, 0) !important;
+    }
+}
 @media all and (max-width: 430px){
 
     .main {
